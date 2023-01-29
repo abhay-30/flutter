@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstproject/HomePage.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
 }
-
-class Myapp extends StatelessWidget {
-  const Myapp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Home Screen"),
-        ),
-        body: Center(
-          child: Text("Welcome to the home screen!"),
-        ),
-      ),
-    );
-  }
-}
+ 
